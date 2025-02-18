@@ -50,8 +50,9 @@ IS_SUCCESSFUL — Was the money used effectively
 
 # Original Run
 Evaluating the Model:
-![Original]()
-![First_Run]()
+
+![Original](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Original_definingmodel.png)
+![First_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/First_Run.png)
 Were you able to achieve the target model performance? NO
 
 ## Optimize the Model
@@ -76,8 +77,9 @@ Data Preprocessing:
 * Reduce the risk of overfitting
 
 Evaluating the Model:
-![Opt1]()
-![Second_Run]()
+
+![Opt1](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Optimization1_definingmodel.png)
+![Second_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Second_Run.png)
 Were you able to achieve the target model performance? NO
 
 # Optimization 2
@@ -91,8 +93,9 @@ Data Preprocessing:
     - The tanh function introduces non-linearity into the model, allowing the network to learn complex patterns in the data. 
 
 Evaluating the Model:
-![Opt2]()
-![Third_Run]()
+
+![Opt2](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Optimization2_definingmodel.png)
+![Third_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Third_Run.png)
 Were you able to achieve the target model performance? NO
 
 # Optimization 3
@@ -106,8 +109,9 @@ Data Preprocessing:
 * Since ReLU involves simple thresholding at zero, it allows for faster computations compared to other activation functions like sigmoid or tanh, which require more complex calculations.
 
 Evaluating the Model:
-![Opt3]()
-![Fourth_Run]()
+
+![Opt3](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Optimization3_definingmodel.png)
+![Fourth_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Fourth_Run.png)
 
 Were you able to achieve the target model performance? YES
 
