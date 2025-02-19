@@ -6,17 +6,17 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 
 From Alphabet Soup’s business team, you have received access to a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as:
 
-EIN and NAME — Identification columns
-APPLICATION_TYPE — Alphabet Soup application type
-AFFILIATION — Affiliated sector of industry
-CLASSIFICATION — Government organization classification
-USE_CASE — Use case for funding
-ORGANIZATION — Organization type
-STATUS — Active status
-INCOME_AMT — Income classification
-SPECIAL_CONSIDERATIONS — Special considerations for application
-ASK_AMT — Funding amount requested
-IS_SUCCESSFUL — Was the money used effectively
+* EIN and NAME — Identification columns
+* APPLICATION_TYPE — Alphabet Soup application type
+* AFFILIATION — Affiliated sector of industry
+* CLASSIFICATION — Government organization classification
+* USE_CASE — Use case for funding
+* ORGANIZATION — Organization type
+* STATUS — Active status
+* INCOME_AMT — Income classification
+* SPECIAL_CONSIDERATIONS — Special considerations for application
+* ASK_AMT — Funding amount requested
+* IS_SUCCESSFUL — Was the money used effectively
 
 ## Instructions:
 ### Preprocess the Data
@@ -47,12 +47,12 @@ IS_SUCCESSFUL — Was the money used effectively
 9) Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity.h5.
 
 ## Results:
-
 # Original Run
 Evaluating the Model:
 
 ![Original](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Original_definingmodel.png)
 ![First_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/First_Run.png)
+
 Were you able to achieve the target model performance? NO
 
 ## Optimize the Model
@@ -80,6 +80,7 @@ Evaluating the Model:
 
 ![Opt1](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Optimization1_definingmodel.png)
 ![Second_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Second_Run.png)
+
 Were you able to achieve the target model performance? NO
 
 # Optimization 2
@@ -96,6 +97,7 @@ Evaluating the Model:
 
 ![Opt2](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Optimization2_definingmodel.png)
 ![Third_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Third_Run.png)
+
 Were you able to achieve the target model performance? NO
 
 # Optimization 3
@@ -105,7 +107,7 @@ Data Preprocessing:
 3) Number of neurons
     - Layer 1 = 80
     - Layer 2 = 30
-4) Reverted back the first layer activation being ('relu')
+4) Reverted back the first layer activation being ('ReLu')
 * Since ReLU involves simple thresholding at zero, it allows for faster computations compared to other activation functions like sigmoid or tanh, which require more complex calculations.
 
 Evaluating the Model:
@@ -113,7 +115,15 @@ Evaluating the Model:
 ![Opt3](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Optimization3_definingmodel.png)
 ![Fourth_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Fourth_Run.png)
 
+
 Were you able to achieve the target model performance? YES
 
 # Summary
-The final automatically optimized neural network trained model from the keras tuner method achieved 80% prediction accuracy with a 0.45 loss, using a sigmoid activation function with input node of 76; 5 hidden layers at a 16, 21, 26, 11, 21, neurons split and 50 training epochs. Performing better than the non automized model. Keeping the Name column was crucial in achieving and and going beyond the target. This shows the importance of the shape of your datasets before you preprocess it.
+The final optimized neural network trained model from the keras tuner method achieved 78% prediction accuracy with a 48% loss. Keeping the 'Name' column was crucial in achieving and and going beyond the target. This shows the importance of the shape of your datasets before you preprocess it.
+
+Additional Recommendations for Optimization: 
+
+* Experimenting with different batch sizes and learning rates.
+* Adjusting dropout rates to prevent overfitting.
+* Exploring different weight initializers and loss functions.
+* Testing alternative optimizers such as Adam, RMSprop, or Nadam to find the best fit for the dataset.
