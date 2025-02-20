@@ -119,7 +119,7 @@ Evaluating the Model:
 Were you able to achieve the target model performance? YES
 
 # Summary
-The final optimized neural network trained model from the keras tuner method achieved 78% prediction accuracy with a 48% loss. Keeping the 'Name' column was crucial in achieving and and going beyond the target. This shows the importance of the shape of your datasets before you preprocess it.
+The final optimized neural network trained model from the keras tuner method achieved 78% prediction accuracy with a 48% loss. Keeping the 'Name' column was crucial in achieving and going beyond the target. This shows the importance of the shape of your datasets before you preprocess it.
 
 Additional Recommendations for Optimization: 
 
