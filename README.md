@@ -126,3 +126,8 @@ Additional Recommendations for Optimization:
 * Adjusting dropout rates to prevent overfitting.
 * Exploring different weight initializers and loss functions.
 * Testing alternative optimizers such as Adam, RMSprop, or Nadam to find the best fit for the dataset.
+  
+## Support Received:
+* Stack Overflow
+* Xpert Learning Assistant Chat+
+* Class Lecture Materials
