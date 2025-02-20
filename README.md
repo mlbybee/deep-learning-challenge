@@ -108,13 +108,12 @@ Data Preprocessing:
     - Layer 1 = 80
     - Layer 2 = 30
 4) Reverted back the first layer activation being ('ReLu')
-* Since ReLU involves simple thresholding at zero, it allows for faster computations compared to other activation functions like sigmoid or tanh, which require more complex calculations.
+* Since ReLu involves simple thresholding at zero, it allows for faster computations compared to other activation functions like sigmoid or tanh, which require more complex calculations.
 
 Evaluating the Model:
 
 ![Opt3](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Optimization3_definingmodel.png)
 ![Fourth_Run](https://github.com/mlbybee/deep-learning-challenge/blob/main/Resources/Fourth_Run.png)
-
 
 Were you able to achieve the target model performance? YES
 
